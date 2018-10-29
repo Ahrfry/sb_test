@@ -1,0 +1,141 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+@import "helper.scss";
+
+ion-menu {
+	ion-content, button {
+		background-color: map_get($colors, primary) !important;
+	}
+
+	button {
+		color: map_get($colors, white) !important;
+	}
+}
+
+ion-grid {
+	.icon-mission {
+		width: 27px !important;
+		display: inline;
+		height: 27px;
+	}
+}
+
+.inline-icon-number {
+	display: inline;
+	vertical-align: super;
+}
+
+.inline-icon-text {
+    display: inline;
+    vertical-align: super;
+    top: -4px;
+    position: relative;
+    padding-left: 4px;
+}
+
+/**
+ * IMAGES
+ */
+
+.div-img {
+	background-position: center center;
+	background-color: transparent;
+	background-size: cover;
+	&.img-square {
+		height: 0px;
+		padding-bottom: 100%;
+	}
+}
+
+/**
+ * ALERTS
+ */
+
+.alert-top {
+	padding: 0 !important;
+	align-items: center !important;
+}
+
+/**
+ * FONT
+ */
+.font-semi-bold {
+	font-weight: 600 !important;
+}
+
+.font-bold {
+	font-weight: 800 !important;
+}
+
+.font-light {
+	font-weight: 300 !important;
+}
+
+/**
+ * CSS ANIMATION
+ */
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+.animated.infinite {
+	animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+	animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+	animation-duration: .75s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	animation-name: fadeIn;
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.fadeInDown {
+	animation-name: fadeInDown;
+}
