@@ -21,6 +21,7 @@ export class ShelterPage {
   	user: any;
 	shelter: any;
 	reviews: Array<any> = [];
+	
 
   	constructor(
   		public navCtrl: NavController,

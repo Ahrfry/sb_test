@@ -19,8 +19,9 @@ import {ShelterReviewPage} from "../pages/shelter/shelter-review/shelter-review"
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
-import { MapPage } from '../pages/map/map';
+import { MapPageModule } from '../pages/map/map.module';
 import { ShelterPage } from '../pages/shelter/shelter';
+import { PrimaryTabsPageModule } from '../pages/primary-tabs/primary-tabs.module';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -32,12 +33,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    MapPage,
     
     ShelterReviewPage
   ],
   imports: [
     BrowserModule,
+    MapPageModule,
+    PrimaryTabsPageModule,
     HttpClientModule,
     Ionic2RatingModule,
     IonicStorageModule.forRoot({
@@ -51,8 +53,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    MapPage,
-
+   
     ShelterReviewPage
   ],
   providers: [

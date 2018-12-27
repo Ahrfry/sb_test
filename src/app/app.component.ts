@@ -12,6 +12,7 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
 import { MapPage } from '../pages/map/map';
 import { ShelterPage } from '../pages/shelter/shelter';
+import { PrimaryTabsPage } from '../pages/primary-tabs/primary-tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -25,7 +26,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage: any;
+  rootPage: any = "PrimaryTabsPage";
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -75,7 +76,7 @@ export class MyApp {
         return false;
       }
       
-      this.rootPage = MapPage;
+      this.rootPage = PrimaryTabsPage;
     });
   }
 }

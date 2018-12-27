@@ -1,0 +1,28 @@
+page-primary-tabs {
+
+}
+
+ion-icon {
+	&[class*="custom-"] {
+	mask-size: contain;
+	mask-position: 50% 50%;
+	mask-repeat: no-repeat;
+	background: currentColor;
+	width: 0.9em;
+	height: 0.9em;
+	}
+
+	&[class*="custom-map"] {
+		mask-image: url(../assets/icon/map-icon.svg);
+	}
+	&[class*="custom-avatar"] {
+		mask-image: url(../assets/icon/avatar-icon.svg);
+	}
+	&[class*="custom-shelters"] {
+		mask-image: url(../assets/icon/shelters-icon.svg);
+	}
+	&[class*="custom-mission"] {
+		mask-image: url(../assets/icon/mission-icon.svg);
+	}
+
+}

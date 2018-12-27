@@ -87,8 +87,8 @@ export class MapPage {
 					let guardian_pos = new google.maps.LatLng(parseFloat(guardian.lat), parseFloat(guardian.lng));
 
 					let icon = {
-						url: guardian.icon.url == undefined ? "assets/imgs/map/pin_sb.png" : guardian.icon.url,
-						scaledSize: new google.maps.Size(37, 52),
+						url: guardian.icon.url == undefined ? "assets/imgs/map/pin_sb.svg" : guardian.icon.url,
+						scaledSize: new google.maps.Size(70, 70),
 					};
 
 					let markerType = "guardian";
