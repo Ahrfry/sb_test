@@ -14,6 +14,8 @@ import { RestService } from './services/rest.service';
 import { UserService } from './services/user.service';
 import { MissionService } from './services/mission.service';
 import { ShelterService } from './services/shelter.service';
+import { AvatarService } from './services/avatar.service';
+
 import {ShelterReviewPage} from "../pages/shelter/shelter-review/shelter-review";
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
@@ -22,6 +24,7 @@ import { ListPage } from '../pages/list/list';
 import { MapPageModule } from '../pages/map/map.module';
 import { ShelterPage } from '../pages/shelter/shelter';
 import { PrimaryTabsPageModule } from '../pages/primary-tabs/primary-tabs.module';
+
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -62,6 +65,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SplashScreen,
     RestService,
     UserService,
+    AvatarService,
     MissionService,
     ShelterService,
     ShelterPage,

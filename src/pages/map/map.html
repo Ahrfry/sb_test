@@ -1,9 +1,56 @@
 <ion-header>
 	<ion-navbar color="primary">
 		
-		<ion-title>
-			<img alt="logo" id="sb_title" src="assets/imgs/map/savebarkley.svg">
-		</ion-title>
+		<ion-grid>
+			<ion-row id="strip">
+			    <ion-col  col-12>
+			    	
+			    </ion-col>
+
+			</ion-row>
+			<ion-row>
+			    <ion-col  col-10 offset-1 >
+			    	<img alt="logo" id="sb_title" src="assets/imgs/map/savebarkley.svg">
+			    </ion-col>
+
+			</ion-row>
+			<ion-row>
+			    <ion-col id="avatar-block" col-12 >
+			    	<ion-row>
+			    		<ion-col col-4>
+			    			<p class="primary-font" *ngIf="avatar_breed">{{avatar_breed}}</p>
+			    			<p>Your Buddy</p>
+			    		</ion-col>
+			    		<ion-col id="avatar" col-4>
+			    			
+			    			<round-progress
+						      [current]="current"
+						      [max]="max"
+						      [stroke]="stroke"
+						      [radius]="radius"
+						      [semicircle]="semicircle"
+						      [rounded]="rounded"
+						      [responsive]="responsive"
+						      [clockwise]="clockwise"
+						      [color]="gradient ? 'url(#gradient)' : color"
+						      [background]="background"
+						      [duration]="duration">
+						    	
+						    </round-progress>
+						    <img alt="logo" id="sb_title" *ngIf="avatar_breed" [src]="'assets/imgs/avatars/'+ avatar_breed + '.svg'">
+			    			
+
+			    		</ion-col>
+			    		<ion-col col-4>
+			    			<p class="primary-font" *ngIf="avatar_level">{{avatar_level}}</p>
+			    			<p>Level</p>
+			    		</ion-col>
+			    	</ion-row>
+			    </ion-col>
+
+			</ion-row>
+		  
+		</ion-grid>
 	</ion-navbar>
 </ion-header>
 

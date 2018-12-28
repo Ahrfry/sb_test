@@ -2,23 +2,76 @@ page-map {
 	#mapElement {
 		height: 120%;
 		width: 100%;
-		margin-top: -144px;
+		margin-top: -20%;
+		
 	}
 	#sb_title{
-		width:133.8px;
-		height:15.98px;
+		width:160px;
+		height:30px;
+
 	}
 
 	.toolbar{
 		height: 144px !important;
 		background: transparent !important;
+		margin-bottom: -144px;
 	}
 	.toolbar-background {
 		background: transparent !important;
 	    background-image: url('../assets/imgs/map/header_background.svg')!important;
-	    background-size: auto 100% !important;
-	    background-position: center center !important;
+	    background-size: 100% !important;
+	    background-position: center -35px !important;
 	    background-repeat: no-repeat !important;
-	    height: 144px !important;
+	    
+	}
+
+	.scroll-content{
+		margin-top: 90px !important;
+	}
+
+	#avatar-block{
+		height: 90px;
+		background: white;
+		border-radius: 5px;
+		
+	}
+
+	#avatar-block .primary-font{
+		font-family: Roboto;
+	    color: #2FABB0;
+	    font-weight: bold;
+	    font-size: 18px;
+	}   
+	#avatar{
+		padding-left:9.5%;
+	}
+
+	#avatar img{
+		width: 55px;
+	    height: 55px;
+	    position: relative;
+	    top: -60px;
+	    left: 6px;
+	}    
+	
+	#avatar-block p{
+		text-align: center;
+		margin-bottom: -5px;
+		margin-top: 5px;
+		
+	}
+
+	#strip{
+		margin-left: -10px;
+	    background: #81ecf1;
+	    margin-right: -10px;
+	    
+	    height: 30px;
+	    
+	}
+
+	round-progress{
+		width: 65px !important;
+		height: 65px !important;
 	}
 }
